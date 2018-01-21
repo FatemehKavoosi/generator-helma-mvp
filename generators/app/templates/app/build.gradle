@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.neenbedankt.android-apt'
 
 android {
 
@@ -58,7 +57,7 @@ dependencies {
     compile rootProject.ext.libraries.okhttp3
 
     compile rootProject.ext.libraries.butterknife
-    apt rootProject.ext.libraries.butterknifeCompiler
+    annotationProcessor rootProject.ext.libraries.butterknifeCompiler
 
     compile rootProject.ext.libraries.gson
     compile rootProject.ext.libraries.picasso
@@ -67,7 +66,7 @@ dependencies {
     provided rootProject.ext.libraries.daggerCompiler
     compile rootProject.ext.libraries.daggerAndroid
     compile rootProject.ext.libraries.daggerSupportAndroid
-    apt rootProject.ext.libraries.daggerAndroidCompiler
+    annotationProcessor rootProject.ext.libraries.daggerAndroidCompiler
 
     compile rootProject.ext.libraries.materialProgress
     compile rootProject.ext.libraries.timber
